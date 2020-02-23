@@ -27,3 +27,8 @@ Buffer Size | NanoSecons (Minimum Mean Time Across 16 runs of benchmark.sh)
 18 | 101.9648
 19 | 117.8102
 20 | 137.5671
+
+Here's the graph for the data above
+![Graph for Minimum Access Time](https://github.com/prg007/csci-389_hw1/blob/master/MinimumAccessTime.png)
+
+
