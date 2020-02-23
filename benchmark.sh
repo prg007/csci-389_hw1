@@ -1,0 +1,25 @@
+./a 32 20000 >> bnchmark.csv &&
+./a 64 20000 >> bnchmark.csv &&
+./a 128 20000 >> bnchmark.csv &&
+./a 256 20000 >> bnchmark.csv &&
+./a 512 20000 >> bnchmark.csv &&
+./a 1024 20000 >> bnchmark.csv &&
+./a 2048 20000 >> bnchmark.csv &&
+./a 4096 20000 >> bnchmark.csv &&
+./a 8192 20000 >> bnchmark.csv &&
+./a 16384 20000 >> bnchmark.csv &&
+./a 32768 20000 >> bnchmark.csv &&
+./a 65536 20000 >> bnchmark.csv &&
+./a 131072 20000 >> bnchmark.csv &&
+./a 262144 20000 >> bnchmark.csv &&
+./a 524288 20000 >> bnchmark.csv &&
+./a 1048576 20000 >> bnchmark.csv &&
+./a 2097152 20000 >> bnchmark.csv &&
+./a 4194304 20000 >> bnchmark.csv &&
+./a 8388608 20000 >> bnchmark.csv &&
+./a 16777216 20000 >> bnchmark.csv &&
+./a 33554432 20000 >> bnchmark.csv &&
+./a 67108864 20000 >> bnchmark.csv &&
+./a 134217728 20000 >> bnchmark.csv &&
+./a 268435456 20000 >> bnchmark.csv &&
+./a 536870912 20000 >> bnchmark.csv
