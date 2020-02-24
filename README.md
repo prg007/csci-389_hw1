@@ -46,7 +46,14 @@ Here's the code for running the shell file **benchmark.sh**. This applies only t
 
 #### a) 
 
-I am trying to infer the different cache sizes by noticing the different step increments that are happening at different times in my graph. As you can notice from the graph above, the first step increment appears to happen around 2<sup>7</sup> and lasts until 2<sup>10</sup>. This makes me guess that my L1 cache size is around 128 KB and my L2 cache size is around 51KB - 1MB. Another step increase occurs from 
+I am trying to infer the different cache sizes by noticing the different step increments that are happening at different times in my graph. As you can notice from the graph above, the first step increment appears to happen around 2<sup>7</sup> and lasts until 2<sup>9</sup>. This makes me guess that my **L1** cache size is around **128 KB** and my **L2** cache size is around **512KB**. Another step increase occurs from 2<sup>10</sup> to 2<sup>13</sup>. So, I think my **L3** cache is around **4-8MB**. After this point from 2<sup>14</sup>, the large step increment might be caused by access to **DRAM**.
+
+
+### b) 
+
+
+
+
 
 
 
