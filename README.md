@@ -56,11 +56,19 @@ We see that our access times for L1 and L2 cache are greater than the ones given
 * I am using a hash function in my code. This hash value is computed inside the while loop. There is definitely going to be some overhead in computing the hash value so this could have added to the latency.(Penalty of 1ns per instruction)
 * The purpose of this assignent is to try and foil the prefetcher. I think the hash function is suceeding in doing that. Branch mispredictions(given in the link) add to a tally of 5ns per penalty for L1 and L2, so I guess this could also be a reason. 
 
-Our numbers for main memory are lower than they should be. Notice that the graph which has been computed above takes the minimum run across 16 iterations (essentially the best case across the observed latencies). Also, the prefetcher might be doing a good job in accessing the memory and loads stuff into L1 and L2, so this might also explain the speed increment.
+Our numbers for main memory are lower than they should be. Notice that the graph which has been computed above takes the minimum run across 16 iterations (essentially the best case across the observed latencies). Also, the prefetcher might be doing a good job for larger buffer sizes in accessing the memory and loads stuff into L1 and L2, so this might also explain the speed increment.
 
 #### c)
 
+The specifications for my system are the following
 
+* L1 - 128KB
+* L2 - 512 KB
+* L3 - 4 MB
+
+I have attached an image below
+
+This more or less falls with my predictions. 
 
 
 
