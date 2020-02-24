@@ -35,6 +35,7 @@ Before running the shell file, you need to compile the code. Compile the code us
 
 * ```clang++ -O3 -Wall -Werror -Wextra  -std=c++17 benchmark.cpp -o a```
 * ```./a (size) (iters)``` or you can run the shell file below
+
 Here's the code for running the shell file **benchmark.sh**. This applies only to Macs
 
 * Go to the folder, open terminal 
