@@ -63,10 +63,14 @@ Our numbers for main memory are lower than they should be. Notice that the graph
 The specifications for my system are the following
 
 * L1 - 128KB
-* L2 - 512 KB
+* L2 - 512 KB (In the screenshot below it says 256Kb/core and I have 2 cores )
 * L3 - 4 MB
 
 I have attached an image below
+
+![Screenshot_System_Specs](https://github.com/prg007/csci-389_hw1/blob/master/Screen%20Shot%202020-02-23%20at%205.35.15%20PM.png)
+
+
 
 This more or less falls with my predictions. 
 
