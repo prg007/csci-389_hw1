@@ -3,7 +3,7 @@
 
 ### Homework files for CSCI 389 HW1
 
-There are 4 files in total. The main program is in the **benchmark.cpp** file. My main strategy for beating the prefetcher was to use a hash function. The hash function works in a manner that prevents the compiler from prefetching any values. It does so by accessing a random part of the buffer and incrementing its value by 1. The hash function only hashes values upto a certain size depending on the byte length. For each byte length in powers of 2, we perform 20000 iterations and then take the mean across all those iterations. A shell file called **benchmark.sh** has been added. More instructions on how to run the shell function has been provided below. I ran the shell function for 16 trials and then took the minimum value across all those trials for each Buffer size. The minimum value tabulated across all those trials have been put in the **bnchmark_minimum.csv** file. Here's the tabulated data below:
+There are 4 files in total. The main program is in the **benchmark.cpp** file. My main strategy for beating the prefetcher was to use a hash function. The hash function works in a manner that prevents the compiler from prefetching any values. It does so by accessing a random part of the buffer and incrementing its value by 1. The hash function only hashes values upto a certain size depending on the byte length. For each byte length in powers of 2, we perform 20000 iterations and then take the mean across all those iterations. A shell file called **benchmark.sh** has been added. More instructions on how to run the shell function has been provided below. I ran the shell function for 16 trials and then took the minimum value across all those trials for each Buffer size. The code in benchmark.cpp isn't that complicated and you should be able to follow along with the help of comments I have added.  The minimum value tabulated across all those trials have been put in the **bnchmark_minimum.csv** file. Here's the tabulated data below:
 
 Buffer Size | NanoSecons (Minimum Mean Time Across 16 runs of benchmark.sh)
 ------------|-------------------------------------------------------------
@@ -42,8 +42,11 @@ Here's the code for running the shell file **benchmark.sh**. This applies only t
 * ```chmod +x benchmark.sh```
 * ```./benchmark.sh```
 
+### PART 3 (Analysis) 
 
- 
+#### a) 
+
+I am trying to infer the different cache sizes by noticing the different step increments that are happening at different times in my graph. As you can notice from the graph above, the first step increment appears to happen around 2<sup>7</sup> and lasts until 2<sup>10</sup>. This makes me guess that my L1 cache size is around 128 KB and my L2 cache size is around 51KB - 1MB. Another step increase occurs from 
 
 
 
