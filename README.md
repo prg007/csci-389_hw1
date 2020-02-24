@@ -49,7 +49,16 @@ Here's the code for running the shell file **benchmark.sh**. This applies only t
 I am trying to infer the different cache sizes by noticing the different step increments that are happening at different times in my graph. As you can notice from the graph above, the first step increment appears to happen around 2<sup>7</sup> and lasts until 2<sup>9</sup>. This makes me guess that my **L1** cache size is around **128 KB** and my **L2** cache size is around **512KB**. Another step increase occurs from 2<sup>10</sup> to 2<sup>13</sup>. So, I think my **L3** cache is around **4-8MB**. After this point from 2<sup>14</sup>, the large step increment might be caused by access to **DRAM**.
 
 
-### b) 
+#### b)
+
+We see that our access times for L1 and L2 cache are greater than the ones given in the link. Access values for **L1** is 0.5 ns but it took me around 15-16ns. Also, the access values for L2 are supposed to around 7ns but it took me around 25 ns on average.  I think this is because of 2 main reasons.
+
+* I am using a hash function in my code. This hash value is computed inside the while loop. There is definitely going to be some overhead in computing the hash value so this could have added to the latency.(Penalty of 1ns per instruction)
+* The purpose of this assignent is to try and foil the prefetcher. I think the hash function is suceeding in doing that. Branch mispredictions(given in the link) add to a tally of 5ns per penalty for L1 and L2, so I guess this could also be a reason. 
+
+Our numbers for main memory are lower than they should be. Notice that the graph which has been computed above takes the minimum run across 16 iterations (essentially the best case across the observed latencies). Also, the prefetcher might be doing a good job in accessing the memory and loads stuff into L1 and L2, so this might also explain the speed increment.
+
+#### c)
 
 
 
