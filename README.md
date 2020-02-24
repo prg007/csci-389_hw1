@@ -31,4 +31,11 @@ Buffer Size | NanoSecons (Minimum Mean Time Across 16 runs of benchmark.sh)
 Here's the graph for the data above
 ![Graph for Minimum Access Time](https://github.com/prg007/csci-389_hw1/blob/master/MinimumAccessTime.png)
 
+Here's the code for running the shell file **benchmark.sh**. This applies only to Macs
+
+* Go to the folder, open terminal 
+* ```chmod +x benchmark.sh```
+* ```./benchmark.sh```
+
+
 
